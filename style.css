@@ -1,0 +1,13 @@
+.nav-link:hover{
+    color: aquamarine;
+}
+
+.navbar .nav-link.active {
+    color: rgb(20, 132, 236);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #1e3a8a, #1a78cf);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius:15px;
+}
