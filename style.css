@@ -1,27 +1,26 @@
 .nav-link:hover{
-    color: rgb(0, 195, 255);
+    color:#4E7ED6;
 }
 
 
 
 .navbar {
-    background-color: #343a40;
+    background-color: rgba(5, 10, 15, 0.7);
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    border-radius:25px;
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px);
+    position: sticky;
+    z-index: 1000;
+    border-radius: 12px;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all 0.3s ease;
     border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
-    
-}
-.navbar:hover {
-  border-color: rgba(1, 178, 248, 0.5); /* subtle blue glow */
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    top: 0px;
 }
 
 body{
-    background:#2c3035;
+    background:#000001
 }
 .navbar-brand img {
     height: 45px;
@@ -30,23 +29,25 @@ body{
 .hero {
     height: 800px;
 
-    background-image: url("hero.png");
-    background-size: cover;        /* fills screen nicely */
-    background-position: center;   /* keeps focus centered */
-    background-repeat: no-repeat;
+     background-image: url("hero.png");
+    background-size: cover;        
+     background-position: center;   
+    background-repeat: no-repeat;  
 
     position: relative;
     margin-top:10px;
     border-radius: 15px;
     z-index: 1;
+    min-height: 90vh;
+    padding: 40px;
 
 }
-.hero::before{
+ .hero::before{
     content: "";
     position: absolute;
-    inset: 0;                     /* top:0 right:0 bottom:0 left:0 */
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0));  /* adjust 0.3–0.7 for strength */
-    border-radius: 14px;
+    inset: 0;                     
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0));
+    border-radius: 14px; 
 }
 .hero-text {
     position: absolute;
@@ -81,8 +82,8 @@ body{
     color: rgb(248, 244, 244);
     padding-top: 30px;
     font-size: 18px;}
-.card {
-  background: #343a40;                /* slightly lighter than body */
+.cards {
+  background:rgb(14, 25, 36);                /* slightly lighter than body */
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
 
@@ -91,8 +92,11 @@ body{
 
   transition: all 0.3s ease;
 }
-.card:hover {
+.cards:hover {
   transform: translateY(-6px);
   border-color: rgba(1, 178, 248, 0.5); /* subtle blue glow */
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+img{
+    height:40%
 }
