@@ -42,13 +42,7 @@ body{
     padding: 40px;
 
 }
- .hero::before{
-    content: "";
-    position: absolute;
-    inset: 0;                     
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0));
-    border-radius: 14px; 
-}
+
 .hero-text {
     position: absolute;
     top: 40%;
@@ -83,7 +77,7 @@ body{
     padding-top: 30px;
     font-size: 18px;}
 .cards {
-  background:rgb(14, 25, 36);                /* slightly lighter than body */
+  background:rgba(5, 10, 15, 0.95);                /* slightly lighter than body */
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
 
@@ -94,7 +88,7 @@ body{
 }
 .cards:hover {
   transform: translateY(-6px);
-  border-color: rgba(1, 178, 248, 0.5); /* subtle blue glow */
+  border-color: rgba(3, 59, 181, 0.45); /* subtle blue glow */
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 img{
